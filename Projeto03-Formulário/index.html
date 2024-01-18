@@ -14,18 +14,60 @@
 
 <body>
   <div class="page">
-    <header>
-      <h1> Crie e compartilhe seu evento</h1>
-      <p>O primeiro passo é preencher esse <br>formulário de inscrição</br></p>
+    <header> 
+    <div>
+      <img src="/Projeto03-Formulário/img/s3nd-removebg-preview.png" alt="logo s3nd">
+    </div>
+    <div class="initial-tittle">
+      <h1> Lançador de horas</h1>
+      <p>Aqui você pode lançar as horas do seu cliente</p>
+    </div>     
     </header>
     <form>
       <fieldset>
-        <legend>Informações do evento</legend>
-        <div class="input-wrapper">
-          <label for="event-tittle">Título do evento <span>(minimo de 8 caracteres)</span></label>
-          <input id="event-tittle" type="text" />
-          <label for="event-link">Link do evento <span>(comece com https://)</span></label>
-        </div>                     
+        <div class="fieldset-wrapper">
+          <legend>Informações do cliente</legend>
+          <div class="input-wrapper">
+            <label for="costumer-select">Escolha o cliente <span>(escolha o cliente abaixo)</span></label>
+            <select id="costumer-select">
+              <option value=""></option>
+              <option value="credsystemrh">Credsystem RH</option>
+              <option value="credsystemhoo">Credsystem HOO</option>
+              <option value="credsystemtake">Credsystem BLIP</option> 
+              <option value="fullsail">Full Sail</option> 
+              <option value="edpempresas">EDP Empresas</option>             
+            </select>                 
+          </div>
+          <div class="input-wrapper">
+            <label for="costumer-select">Tipo de atividade <span>(escolha o tipo de atividade)</span></label>
+            <select id="costumer-select">
+              <option value=""></option>
+              <option value="sustentacao">Sustentação</option>
+              <option value="bug">BUG</option>
+              <option value="tarefa">Tarefa</option>                           
+            </select>                 
+          </div>  
+          <div class="input-wrapper">
+            <label for="event-contact">Horário inicial <span>(escolha o inicio)</span></label>
+            <input id="event-contact" type="datetime-local" />        
+          </div>
+          <div class="input-wrapper">
+            <label for="event-contact">Horário final <span>(escolha o fim)</span></label>
+            <input id="event-contact" type="datetime-local" />        
+          </div>
+          <div class="input-wrapper">
+            <label for="event-info">Informações extras <span>(descreva a atividade)</span></label>
+            <textarea id="event-info" cols="30" rows="10"></textarea>        
+          </div>
+          <div class="input-wrapper">
+            <label for="event-category">Categoria</label>
+            <select id="event-category">
+              <option value="live">Ao vivo</option>
+              <option value="podcast">Podcast</option>
+              <option value="mentorship">Mentoria</option>
+            </select>       
+          </div>       
+        </div>
       </fieldset>
     </form>
   </div>
