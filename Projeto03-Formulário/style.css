@@ -1,10 +1,20 @@
-h1{
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header h1{
   font-family: 'Archivo', sans-serif;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   color: #fff;
-  
+  margin-bottom: 24px;  
+}
+
+body, header, input, select{
+  font-family: 'Poppins', sans-serif;
 }
 
 .page{
@@ -18,8 +28,7 @@ header{
 
 }
 
-body{
-  font-family: 'Poppins', sans-serif;
+body{  
   background-color: #e5e5e5;  
 }
 
@@ -35,8 +44,7 @@ body::before{
   z-index: -1;
 }
 
-header p{
-  font-family: 'Poppins', sans-serif;
+header p{  
   font-style: normal;
   color: #42d3ff;
   size: 16px;
@@ -65,3 +73,44 @@ fieldset{
     border-bottom: 1px solid #e5e5e5;
     padding-bottom: 16px;
   }
+
+  .input-wrapper{
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  .input-wrapper label{    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4e4958; 
+    margin-bottom: 8px;   
+  }
+
+  .input-wrapper label span{
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #c1bccc;
+  }
+
+  .input-wrapper input{
+    background: #fafafc;
+    border: 1px solid #e6e6f0;  
+    border-radius: 8px;
+    width: 608px;  
+    height: 56px;
+    padding: 0 24px;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #C1BCCC;
+  }
+  
+
