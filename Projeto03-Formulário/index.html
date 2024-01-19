@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crie seu evento</title>
+  <title>Lançador de horas</title>
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
@@ -46,15 +46,7 @@
               <option value="bug">BUG</option>
               <option value="tarefa">Tarefa</option>                           
             </select>                 
-          </div>  
-          <div class="input-wrapper">
-            <label for="event-contact">Horário inicial <span>(escolha o inicio)</span></label>
-            <input id="event-contact" type="datetime-local" />        
-          </div>
-          <div class="input-wrapper">
-            <label for="event-contact">Horário final <span>(escolha o fim)</span></label>
-            <input id="event-contact" type="datetime-local" />        
-          </div>
+          </div>           
           <div class="input-wrapper">
             <label for="event-info">Informações extras <span>(descreva a atividade)</span></label>
             <textarea id="event-info" cols="30" rows="10"></textarea>        
@@ -68,7 +60,27 @@
             </select>       
           </div>       
         </div>
+        <div class="fieldset-wrapper">
+          <legend>Horário</legend>  
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="costumer-date">Data</label>
+              <input type="date" id="costumer-date"></input>        
+            </div>
+            <div class="input-wrapper">
+              <label for="costumer-begin">Início</label>
+              <input type="time" id="costumer-begin"></input>        
+            </div>
+            <div class="input-wrapper">
+              <label for="costumer-end">Fim</label>
+              <input type="time" id="costumer-end"></input>        
+            </div>
+          </div>
+        </div>
       </fieldset>
+      
+
+
     </form>
   </div>
 

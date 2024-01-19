@@ -66,6 +66,10 @@ form{
   min-height: 300px;
   margin-top: 38px;
   padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  
 }
 
 fieldset{  
@@ -146,6 +150,17 @@ fieldset{
     background-position: right 24px top 50%; 
   }
 
+  .col-3{
+    display: flex;
+    gap: 20px;
+    width: 10rem;    
+  }
+
+  .col-3 > div:nth-child(1){
+    width: 100%;
+  }
+
+  
   
   
   
