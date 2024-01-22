@@ -23,24 +23,24 @@
       <p>Aqui você pode lançar as horas do seu cliente</p>
     </div>     
     </header>
-    <form>
+    <form id="my-form">
       <fieldset>
         <div class="fieldset-wrapper">
           <legend>Informações do cliente</legend>
           <div class="input-wrapper">
             <label for="costumer-select">Escolha o cliente <span>(escolha o cliente abaixo)</span></label>
-            <select id="costumer-select">
+            <select id="costumer-select" required>
               <option value=""></option>
               <option value="credsystemrh">Credsystem RH</option>
               <option value="credsystemhoo">Credsystem HOO</option>
               <option value="credsystemtake">Credsystem BLIP</option> 
               <option value="fullsail">Full Sail</option> 
-              <option value="edpempresas">EDP Empresas</option>             
-            </select>                 
+              <option value="edpempresas">EDP Empresas</option>                     
+            </select>             
           </div>
           <div class="input-wrapper">
             <label for="costumer-select">Tipo de atividade <span>(escolha o tipo de atividade)</span></label>
-            <select id="costumer-select">
+            <select id="costumer-select" required>
               <option value=""></option>
               <option value="sustentacao">Sustentação</option>
               <option value="bug">BUG</option>
@@ -49,14 +49,15 @@
           </div>           
           <div class="input-wrapper">
             <label for="event-info">Informações extras <span>(descreva a atividade)</span></label>
-            <textarea id="event-info" cols="30" rows="10"></textarea>        
+            <textarea id="event-info" cols="30" rows="10" required></textarea>        
           </div>
           <div class="input-wrapper">
             <label for="event-category">Categoria</label>
-            <select id="event-category">
-              <option value="live">Ao vivo</option>
-              <option value="podcast">Podcast</option>
-              <option value="mentorship">Mentoria</option>
+            <select id="event-category" required>
+              <option value=""></option>
+              <option value="projeto">Projeto</option>
+              <option value="sustentacao">Sustentação</option>
+              <option value="dev">Desenvolvimento</option>
             </select>       
           </div>       
         </div>
@@ -68,22 +69,23 @@
           <div class="col-3">
             <div class="input-wrapper">
               <label for="costumer-date">Data</label>
-              <input type="date" id="costumer-date"></input>        
+              <input type="date" id="costumer-date" required></input>        
             </div>
             <div class="input-wrapper">
               <label for="costumer-begin">Início</label>
-              <input type="time" id="costumer-begin"></input>        
+              <input type="time" id="costumer-begin" required></input>        
             </div>
             <div class="input-wrapper">
               <label for="costumer-end">Fim</label>
-              <input type="time" id="costumer-end"></input>        
+              <input type="time" id="costumer-end" required></input>        
             </div>
           </div>
         </div>
       </fieldset>
-
-
     </form>
+    <footer>
+      <button form="my-form" class="button">Lançar horas</button>
+    </footer>
   </div>
 
 </body>

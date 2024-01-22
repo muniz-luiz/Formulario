@@ -58,14 +58,14 @@ body::before {
 
 header p {
   font-style: normal;
-  color: #42d3ff;
+  color: #1addfd;
   size: 16px;
   line-height: 26px;
 }
 
 form {
   border-color: #d6d6d6;
-  background: #fafafa;
+  background: #6e4e9a;
   border-radius: 8px 8px 0px 0px;
   min-height: 300px;
   margin-top: 38px;
@@ -110,7 +110,7 @@ fieldset legend {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #4e4958;
+  color: white;
   margin-bottom: 8px;
 }
 
@@ -175,3 +175,32 @@ fieldset legend {
 #costumer-end {
   width: 200px;
 }
+
+footer {
+  background: black;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button{
+  height: 56px;
+  background: white;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 8px;
+  border: 0;
+}
+
+footer .button:hover{
+  background: #1addfd;
+  color: #6e4e9a;
+  
+}
+
